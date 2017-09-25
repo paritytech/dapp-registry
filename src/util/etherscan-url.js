@@ -14,15 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
-import { url as externalUrl } from '@parity/etherscan/links';
+import { txLink, addressLink } from '@parity/etherscan';
 
-const leading0x = /^0x/;
+export default function etherscanUrl (hash, isTestnet, netVersion) {
+  hash = hash.toLowerCase().replace(/^0x/, '');
 
-const etherscanUrl = (hash, isTestnet, netVersion) => {
-  hash = hash.toLowerCase().replace(leading0x, '');
-  const type = hash.length === 40 ? 'address' : 'tx';
-
-  return `${externalUrl(isTestnet, netVersion)}/${type}/0x${hash}`;
-};
-
-export default etherscanUrl;
+  return hash.length === 40
+    ? addressLink(`0x${hash}`, isTestnet, netVersion)
+    : txLink(`0x${hash}`, isTestnet, netVersion);
+}
