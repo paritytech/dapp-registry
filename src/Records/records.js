@@ -25,7 +25,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import SaveIcon from 'material-ui/svg-icons/content/save';
 import PropTypes from 'prop-types';
 
-import { nullableProptype } from '@parity/shared/util/proptypes';
+import { nullableProptype } from '@parity/shared/lib/util/proptypes';
 
 import { clearError, update } from './actions';
 import styles from './records.css';

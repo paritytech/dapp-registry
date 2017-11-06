@@ -22,8 +22,8 @@ import {
 } from 'material-ui';
 import PropTypes from 'prop-types';
 
-import { nullableProptype } from '@parity/shared/util/proptypes';
-import { AddIcon, CheckIcon } from '@parity/ui/Icons';
+import { nullableProptype } from '@parity/shared/lib/util/proptypes';
+import { AddIcon, CheckIcon } from '@parity/ui/lib/Icons';
 
 import { clearError, confirm, propose } from './actions';
 import styles from './reverse.css';

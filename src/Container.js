@@ -19,7 +19,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 
-import { nullableProptype } from '@parity/shared/util/proptypes';
+import { nullableProptype } from '@parity/shared/lib/util/proptypes';
 
 import Application from './Application';
 import * as actions from './actions';

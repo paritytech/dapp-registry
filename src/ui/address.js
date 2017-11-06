@@ -18,7 +18,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { nullableProptype } from '@parity/shared/util/proptypes';
+import { nullableProptype } from '@parity/shared/lib/util/proptypes';
 
 import Hash from './hash';
 import etherscanUrl from '../util/etherscan-url';

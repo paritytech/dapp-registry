@@ -25,7 +25,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import CheckIcon from 'material-ui/svg-icons/navigation/check';
 import PropTypes from 'prop-types';
 
-import { nullableProptype } from '@parity/shared/util/proptypes';
+import { nullableProptype } from '@parity/shared/lib/util/proptypes';
 
 import { fromWei } from '../parity.js';
 

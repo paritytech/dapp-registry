@@ -26,7 +26,7 @@ import MenuItem from 'material-ui/MenuItem';
 import keycode from 'keycode';
 import PropTypes from 'prop-types';
 
-import { nullableProptype } from '@parity/shared/util/proptypes';
+import { nullableProptype } from '@parity/shared/lib/util/proptypes';
 
 import Address from '../ui/address.js';
 import renderImage from '../ui/image.js';
